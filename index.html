@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>share button example</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+</head>
+<body>
+
+<h1>the cat</h1>
+
+<img src="image/cat.jpg?2" alt="">
+
+<!-- VK begin -->
+<h3>url: https://vk.com/dev/widget_share</h3>
+<div id="vk_share_button"></div>
+
+<script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+<script>
+    document.getElementById('vk_share_button').innerHTML = VK.Share.button(
+        {
+            url: 'https://web.gem4me.com/share-button',
+            title: 'Заголовок страницы',
+            image: 'https://web.gem4me.com/share-button/image/cat.jpg',
+            noparse: true
+        },
+        {type: 'custom', text: '<div style="width: 20px;  height: 100px; background-color: #c00;">123</div>'});
+</script>
+<!-- VK end -->
+
+</body>
+</html>
